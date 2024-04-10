@@ -17,6 +17,8 @@ Your intelligent companion for streamlined machine learning model selection and 
 This script is designed to assist users in the preliminary steps of machine learning model selection and evaluation. It provides functions for model warmup, which involves training and tuning several machine learning models using grid search cross-validation. The script supports both classification and regression tasks. 
 Many times, before stepping into deep learning, we process our data and still don't know what model to use. Whether our problem is a regression one or a classification one, we have a variety of models to choose from such as SVC, SVR, Decision Trees, and more.
 
+--- 
+
 ### What models does this script support
 
 - DecisionTreeClassifier (see sklearn documentation of DTC) [link](https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html)
@@ -31,10 +33,13 @@ Many times, before stepping into deep learning, we process our data and still do
 - LinearRegression (see documentation of LinearRegression) [link](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html)
 - Ridge (see sklearn documentation of Ridge) [link](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html)
 
+--- 
 
 ### 2. Preparing Your Data
 
 Before using the script, ensure that your data is properly preprocessed and split into training and validation sets. The `X_train`, `y_train`, `X_val`, and `y_val` variables should contain the features and target variables for training and validation.
+
+--- 
 
 ### 3. Model Warmup for Classification and Regression
 
@@ -44,9 +49,13 @@ To warm up classification models, call the `warmup_classification()` function wi
 #### Regression:
 To warm up regression models, call the `warmup_regression()` function with your training data. Similar to classification, this function performs grid search cross-validation to find the best hyperparameters for linear regression, decision tree, gradient boosting, random forest, and support vector regression (SVR) models.
 
+---
+
 ### 4. Visualizing Model Performance
 
 After warming up the models, you can visualize their performance on both the training and validation sets. The `visualization_class()` function is used for classification models, while the `visualization_regress()` function is used for regression models. These functions display the accuracy or R-squared scores of each model on the training and validation sets.
+
+--- 
 
 ### 5. Conclusion
 
