@@ -1,4 +1,4 @@
-# ModelForge 
+# "MLModelSelector: Simplified Model Selection Script"
 # Model selection: Pre-deep learning approach
 
 Your intelligent companion for streamlined machine learning model selection and optimization
